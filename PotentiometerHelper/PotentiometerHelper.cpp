@@ -1,26 +1,26 @@
-#include "PotenciometerHelper.h"
+#include "PotentiometerHelper.h"
 
 
-Potenciometer::Potenciometer(byte pin) {
+Potentiometer::Potentiometer(byte pin) {
 	this->pin = pin;
 	pinMode(this->pin, INPUT);
 }
 
-float Potenciometer::getVoltage() {
+float Potentiometer::getVoltage() {
 	return analogRead(this->pin);
 }
 
-float Potenciometer::getVolume() {
+float Potentiometer::getVolume() {
 	return (1023-analogRead(this->pin));
 }
 
-float Potenciometer::read(Potenciometer::Unit unit) {
+float Potentiometer::read(Potentiometer::Unit unit) {
 	switch (unit)
     {
-    case Potenciometer::VOLT:
+    case Potentiometer::VOLT:
         return getVoltage();
         break;
-    case Potenciometer::VOLUME:
+    case Potentiometer::VOLUME:
         return getVolume();
         break;
     }

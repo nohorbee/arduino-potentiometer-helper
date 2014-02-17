@@ -1,17 +1,17 @@
-#ifndef POTENCIOMETER_H;
-#define POTENCIOMETER_H;
+#ifndef POTENTIOMETER_H;
+#define POTENTIOMETER_H;
 
 #include <Arduino.h>
 
-class Potenciometer {
+class Potentiometer {
   private: 
   	byte pin;
   public:
-  	enum Unit { VOLT, VOLUME }; // Use PhotoResistor::VOLT or PhotoResistor::LUX
-    Potenciometer(byte pin);
+  	enum Unit { VOLT, VOLUME }; // Use Potentiometer::VOLT or Potentiometer::LUX
+    Potentiometer(byte pin);
     float getVoltage();
     float getVolume();
-    float read(Potenciometer::Unit unit);
+    float read(Potentiometer::Unit unit);
 };
 
 #endif
