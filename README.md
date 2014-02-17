@@ -1,4 +1,4 @@
-#arduino-potenciometer-helper
+#arduino-potentiometer-helper
 
 ##About
 A library to handle potentiometers on a OO way.
@@ -15,8 +15,8 @@ Open your Arduino IDE (If you have not installed it, please follow the steps ind
 ####3. What to expect?
 You should be able to call 
 
-    Potenciometer potenciometer = Potenciometer(potenciometerPin); 
-    // potenciometerPin: a byte constant indicating the pin
-    // to which the potenciometer is connected.
+    Potentiometer potentiometer = Potentiometer(potentiometerPin); 
+    // potentiometerPin: a byte constant indicating the pin
+    // to which the potentiometer is connected.
 
-Once you have the potenciometer object, you can call any of its methods.
+Once you have the potentiometer object, you can call any of its methods.
